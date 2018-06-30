@@ -1,0 +1,51 @@
+/*
+	Author: Armando Gautreaux
+	Template: Crystal Collector
+	Version: 0.1
+	GITHUB: https://github.com/armandogautreaux
+*/
+
+/* TABLE OF CONTENTS
+  1.  General Styles
+  2.  Main Content
+*/
+
+/*
+========================================
+1. General Styles
+========================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+body {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  background: url(../images/footer_lodyas.png);
+}
+
+.logo {
+  font-family: 'PT Serif', serif;
+  color: #fee400;
+}
+
+p {
+  color: lavender;
+}
+
+span {
+  color: lightpink;
+}
+.guessed {
+  color: lightpink;
+}
+
+/*
+========================================
+2. Main content
+========================================
+*/
+
+.border-main {
+  border: 40px solid green;
+}

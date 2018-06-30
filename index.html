@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector</title>
+
+  <!-- MAIN CSS FILES -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- MAIN HEADER/GAME-->
+  <header>
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo starts here -->
+        <div class="col-sm-12 col-md-5 col-lg-4 logo pt-3">
+          <div class="heading-font text-sm-center text-md-center">
+            <h1 class="font-weight-bold">Crystal Collector</h1>
+            <p class="h4 subtitle">for Kids</p>
+          </div>
+        </div>
+        <!-- Logo ends here-->
+
+        <!-- Score starts here -->
+        <div class="col-sm-12 col-md-7 col-lg-8 ">
+          <nav class="py-4">
+            <div class="text-sm-center text-md-right">
+              <div class="d-inline-block">
+                <p>Wins
+                  <span class="pl-2" id="wins">0</span>
+                </p>
+              </div>
+              <div class="d-inline-block">
+                <p class="pl-4">Looses
+                  <span class="pl-2" id="looses">0</span>
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Score ends here -->
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- MAIN SECTION-->
+  <section class="main">
+    <div class="container p-5 border-main">
+
+      <div class="row">
+        <div class="col-sm-6 heading-font title-border bg-white text-center py-2">
+          <h1 class="h4">Goal:</h1>
+          <h1 id="number-to-guess">35</h1>
+        </div>
+        <div class="col-sm-6 heading-font title-border bg-white text-center py-2">
+          <h1 class="h4">Your total score:</h1>
+          <h1 id="score">0</h1>
+        </div>
+      </div>
+      <div class="row pt-5" id="crystal-container">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN FOOTER/GAME -->
+  <footer class="primary-footer">
+    <div class="container bg-success py-2">
+      <div class="row text-center">
+
+        <div class="col">
+          <p id="message" class="h5 guessed">
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--FIXED FOOTER-->
+  <section class="fixed-bottom text-center">
+    <p class="pt-1">
+      <small>Copyright &copy;
+      </small>
+    </p>
+  </section>
+
+
+
+  <!-- JS -->
+  <script src=" http://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin=" anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+    crossorigin="anonymous "></script>
+  <script type="text/javascript " src="assets/javascript/game.js "></script>
+
+</body>
+
+</html>
