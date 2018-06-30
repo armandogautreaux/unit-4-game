@@ -1,5 +1,4 @@
 // -------------------------------------------------------------------------------------
-
 //General Variables
 var wins = 0;
 var looses = 0;
@@ -7,7 +6,6 @@ var targetNumber = 35; //This number is automatic generated after winning or loo
 var totalScore = 0;
 
 // -------------------------------------------------------------------------------------
-
 //Array Variables
 var numberOptions = [];
 var images = [
@@ -16,6 +14,15 @@ var images = [
   'assets/images/element3.png',
   'assets/images/element4.png'
 ];
+
+// -------------------------------------------------------------------------------------
+//Most used DOM Elements
+var message = $('#message');
+var numberToGuess = $('#number-to-guess');
+var score = $('#score');
+
+// -------------------------------------------------------------------------------------
+// The next function will generate 4 numbers at random and will push them to the empty array.
 function generateNums() {
   for (var i = 0; i < 4; i++) {
     var num = Math.floor(Math.random() * 9) + 1;
@@ -24,18 +31,12 @@ function generateNums() {
 }
 generateNums();
 console.log(numberOptions);
-// -------------------------------------------------------------------------------------
-
-//Most used DOM Elements
-var message = $('#message');
-var numberToGuess = $('#number-to-guess');
-var score = $('#score');
 
 // -------------------------------------------------------------------------------------
 //Through add() I include all the functions (and loop) to restart all the events after my conditionals are accomplished.
 function add() {
   //This function grabs our last created .class and apply an on.click event.
-  $('.crystal-image').on('click', function () {
+  $('.crystal-image').on('click', function() {
     var crystalValue = $(this).attr('data-crystalvalue');
     crystalValue = parseInt(crystalValue);
     totalScore += crystalValue;
@@ -79,6 +80,7 @@ function add() {
   });
 }
 
+// -------------------------------------------------------------------------------------
 //For Loop to create <img> and assing numbers (through addClass and .attr)
 function generateImgs(numberOptions) {
   $('#crystal-container').empty('');
@@ -92,5 +94,3 @@ function generateImgs(numberOptions) {
   add();
 }
 generateImgs(numberOptions);
-
-// -------------------------------------------------------------------------------------
